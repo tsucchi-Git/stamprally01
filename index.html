@@ -136,7 +136,8 @@
 		    }
 		    //「visit_data」というキーでローカルストレージが使われている場合は何もしない。使われていない場合は、すべてのスポットを未訪問として、各スポットへの訪問を無（初期設定）としてJSONデータに変換し、vist_ysという配列に格納する。
 		    //let visit_yn=[];
-		    if (flag<0){
+		  alert('flag:' + flag);
+		   if (flag<0){
 		      for(i=0; i < markerList.length; i++){
 			  visit_yn.push(-1);
 		      }
@@ -155,7 +156,6 @@
 		  {
 		    alert('ローカルストレージは使えません');
 		  }
-		  alert('ok');
 		  //表示するタイルレイヤのURLとAttributionコントロールの記述を設定して、地図に追加する
 		  L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
 		      attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
