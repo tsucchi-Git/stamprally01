@@ -111,9 +111,9 @@
             )            
               //取得したデータは連想配列
               .then(markerList => {
-		//for (var i = 0; i < markerList.length; i++) {
-		//   alert('ファイルの読み込み成功しましたよ。' + markerList[i].id + ',' + markerList[i].lat + ',' + markerList[i].lng + '\n')
-		//}
+		for (var i = 0; i < markerList.length; i++) {
+		   alert('ファイルの読み込み成功しましたよ。' + markerList[i].id + ',' + markerList[i].lat + ',' + markerList[i].lng + '\n')
+		}
 		  //ローカルストレージに災害碑の基礎データを保存
 		  if(window.localStorage){
 		    //localStorage.removeItem('visit_data%3'); //訪問の有無を記憶させるローカルストレージをクリアする
