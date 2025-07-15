@@ -139,9 +139,9 @@
 		  alert('flag:' + flag);
 		   if (flag<0){
 		      for(i=0; i < markerList.length; i++){
+			alert(i);
 			  visit_yn.push(-1);
 		      }
-		alert(visit_yn);
 		      //ローカルストレージに書き込み
 		      let json_string_visit=JSON.stringify(visit_yn); 
 		      localStorage.setItem(key_visit,json_string_visit);
