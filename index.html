@@ -125,12 +125,12 @@
 		    let key_all='all_basic_data%' + markerList[0].areaid;
 		    localStorage.setItem(key_all,json_string);
 		    //「visit_data」というキーでローカルストレージにデータが保存されているか否かを確認する。
-		    var flag=-1
+		    var flag=-1;
 		    key_visit="visit_data%" + markerList[0].areaid;
 		    for (key in localStorage) {
 			if (localStorage.hasOwnProperty(key)) {
 			    if(key==key_visit){
-			      flag=1
+			      flag=1;
 			    }
 			}
 		    }
