@@ -48,11 +48,11 @@
 	
     <script>
 	if(!window.sessionStorage.getItem('flag_area')){
-		let _flag = sessionStorage.getItem('flag_area');}//セッションストレージからキーflag_areaで保存されている値の取得（地域選択メニューから呼び出さ絵ている場合）
-	??else{
+		let _flag = sessionStorage.getItem('flag_area');//セッションストレージからキーflag_areaで保存されている値の取得（地域選択メニューから呼び出さ絵ている場合）
+	}else{
 		let _flag=-100;
 	}
-	let _flag = sessionStorage.getItem('flag_area');
+	//let _flag = sessionStorage.getItem('flag_area');
 	var selection=document.getElementById("selectarea");	
         if(_flag==100){
 	    	selection.src="icon/select-area.png";
