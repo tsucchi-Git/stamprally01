@@ -50,7 +50,7 @@
 	if(sessionStorage.getItem('flag_area')){
 		let _flag = sessionStorage.getItem('flag_area');}//セッションストレージからキーflag_areaで保存されている値の取得（地域選択メニューから呼び出さ絵ている場合）
 	else{
-		let _flag=-100
+		let _flag=-100;
 	}
 	var selection=document.getElementById("selectarea");	
         if(_flag==100){
@@ -140,7 +140,7 @@
 		    }
 		    //「visit_data」というキーでローカルストレージが使われている場合は何もしない。使われていない場合は、すべてのスポットを未訪問として、各スポットへの訪問を無（初期設定）としてJSONデータに変換し、vist_ysという配列に格納する。
 		   if (flag<0){
-		      visit_yn=[]; //配列の初期化
+		      let visit_yn=[]; //配列の初期化
 		      for(i=0; i < markerList.length; i++){
 			  visit_yn.push(-1);
 		      }
